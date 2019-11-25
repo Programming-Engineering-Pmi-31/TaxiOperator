@@ -1,0 +1,26 @@
+﻿<Page x:Class="PI.DeleteTaxi"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PI"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="700"
+      Title="DeleteTaxi">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#DCDCDC" Offset="0.0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel>
+            <DataGrid Height="350" Margin="25,40,25,5" Name="DeleteDateGrid"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0" Height="100">
+                <Button Height="70" Margin="80,15,0,15" Name="UpdateButton" Content="Refresh" Click="UpdateButton_Click" Width="140" FontSize="20" Foreground="Black"/>
+                <Button Height="70" Margin="250,15,0,15" Name="ConfirmDeleteTaxiButton" Content="Delete" Click="ConfirmDeleteTaxiButton_Click" Width="140" Foreground="Black" FontSize="20"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
