@@ -1,2 +1,2 @@
 # Taxi Operator
-Taxi reservation
+desktop application about Taxi reservation
