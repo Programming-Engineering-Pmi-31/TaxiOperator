@@ -52,7 +52,7 @@
         <Border CornerRadius="10" Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#B8860B"/>
+                    <GradientStop Color="Orange"/>
                 </LinearGradientBrush>
             </Border.Background>
             <Button Content="X" Name="ExitButton" 
