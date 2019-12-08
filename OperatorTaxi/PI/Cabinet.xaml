@@ -47,7 +47,7 @@
     <Grid Margin="-5,-5,0,0">
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#DCDCDC"/>
+                <GradientStop Color="#D2691E"/>
             </LinearGradientBrush>
         </Grid.Background>
 

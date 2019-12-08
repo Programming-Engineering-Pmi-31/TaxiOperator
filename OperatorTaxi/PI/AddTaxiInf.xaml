@@ -45,7 +45,7 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#DCDCDC"/>
+                <GradientStop Color="#D2691E"/>
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel Orientation="Vertical" Margin="0,0,380,410">
@@ -76,7 +76,7 @@
             <ComboBox x:Name="TaxiIdComboBox" Margin="78,0,60,0" Style="{StaticResource ComboBoxFlatStyle}" Height="30"/>
         </StackPanel>
         <StackPanel Orientation="Vertical" Margin="350,229,30,181">
-            <Label Content="Driver Name:" Margin="78,30,60,0"/>
+            <Label Content="Phone number:" Margin="78,30,60,0"/>
             <TextBox Margin="78,0,60,0" x:Name="AirlineBox"/>
             <Border Style="{StaticResource BorderStyle}" Margin="78,0,60,0"/>
         </StackPanel>

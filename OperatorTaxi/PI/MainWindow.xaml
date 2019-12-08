@@ -11,7 +11,7 @@
         MouseDown="Window_MouseDown">
     <Window.Resources>
         <Style x:Key="TitleTextBlock">
-            <Setter Property="Control.FontFamily" Value="Fonts#VIVALDI"/>
+            <Setter Property="Control.FontFamily" Value="Fonts#Calibri"/>
             <Setter Property="Control.FontWeight" Value="Bold"/>
             <Setter Property="Control.FontSize" Value="22"/>
             <Setter Property="Control.Foreground" Value="Black"/>
@@ -64,7 +64,7 @@
             <Border CornerRadius="10" Grid.RowSpan="2">
                 <Border.Background>
                     <LinearGradientBrush>
-                        <GradientStop Color="#DCDCDC" Offset="0.0"/>
+                        <GradientStop Color="#B22222" Offset="0.0"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Button Content="X" Name="ExitButton" 
@@ -76,8 +76,8 @@
             </Border>
 
             <StackPanel VerticalAlignment="Center">
-                <Image Source="Photos/Taxi.png" Width="80"/>
-                <TextBlock Text="My Taxi" Style="{StaticResource TitleTextBlock}" Margin="135,0"/>
+                <Image Source="Photos/Taxiimage.png" Width="80"/>
+                <TextBlock Text="Taxi operator" Style="{StaticResource TitleTextBlock}" Margin="125,0"/>
             </StackPanel>
             <StackPanel Grid.Row="1" >
                 <StackPanel Orientation="Horizontal">

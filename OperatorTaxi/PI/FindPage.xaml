@@ -34,7 +34,7 @@
     <Grid Name="FindPanel" HorizontalAlignment="Left" Margin="-5,-5,0,0" Width="705" >
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#DCDCDC"/>
+                <GradientStop Color="#D2691E"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid>
@@ -90,7 +90,6 @@
                 </ComboBox>
             </StackPanel>
             <Button Margin="72,164,483,311" Name ="SearchTaxi" Content="Search" FontSize="20"  Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="30" Click="SearchTaxi_Click"/>
-            <Button Margin="492,164,63,311" Name ="ReserveTicket" Content="Reserve" FontSize="20" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Stretch" Height="30" Click="ReserveTicket_Click" RenderTransformOrigin="0.064,0.529"/>
             <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="277" Margin="15,218,15,15" VerticalAlignment="Top" Width="679"/>
         </Grid>
     </Grid>

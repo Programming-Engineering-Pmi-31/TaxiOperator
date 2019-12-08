@@ -37,7 +37,7 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#DCDCDC"/>
+                <GradientStop Color="#D2691E"/>
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel Orientation="Vertical" Margin="0,0,0,343">
@@ -51,7 +51,7 @@
             <Border Style="{StaticResource BorderStyle}" Margin="220,0,220,0"/>
         </StackPanel>
         <StackPanel Orientation="Vertical" Margin="-10,234,10,109">
-            <Label Content="Phone Number:" Margin="220,30,220,0"/>
+            <Label Content="Driver name:" Margin="220,30,220,0"/>
             <TextBox x:Name="AddCityBox" Margin="220,0,220,0"/>
             <Border Style="{StaticResource BorderStyle}" Margin="220,0,220,0"/>
         </StackPanel>
