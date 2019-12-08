@@ -7,9 +7,6 @@ using System.Data;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для ChangeTaxi.xaml
-    /// </summary>
     public partial class ChangeTaxi : Page
     {
         public ChangeTaxi()

@@ -7,9 +7,7 @@ using System.Data;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для FindPage.xaml
-    /// </summary>
+   
     public partial class FindPage : Page
     {
         public FindPage()

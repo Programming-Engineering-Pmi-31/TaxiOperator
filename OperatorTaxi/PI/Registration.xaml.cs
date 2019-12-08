@@ -7,9 +7,6 @@ using System.Configuration;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для Registration.xaml
-    /// </summary>
     public partial class Registration : Window
     {
         public Registration()

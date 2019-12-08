@@ -5,9 +5,6 @@ using System.Data.SqlClient;
 using System.Configuration;
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для Cabinet.xaml
-    /// </summary>
     public partial class Cabinet : Page
     {
         public Cabinet()

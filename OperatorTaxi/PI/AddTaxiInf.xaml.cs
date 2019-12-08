@@ -5,9 +5,6 @@ using System.Data.SqlClient;
 using System.Configuration;
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для AddTaxiInf.xaml
-    /// </summary>
     public partial class AddTaxiInf : Page
     {
         public AddTaxiInf()
@@ -17,7 +14,7 @@ namespace PI
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //UpdateItems();
+            
 
         }
         private void UpdateItems()

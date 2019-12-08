@@ -7,9 +7,7 @@ using System.Data;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для DeleteTaxi.xaml
-    /// </summary>
+  
     public partial class DeleteTaxi : Page
     {
         public DeleteTaxi()

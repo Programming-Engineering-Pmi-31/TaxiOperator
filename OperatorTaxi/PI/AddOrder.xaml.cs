@@ -7,9 +7,6 @@ using System.Configuration;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для AddTaxi.xaml
-    /// </summary>
     public partial class AddTaxi : Page
     {
         public AddTaxi()

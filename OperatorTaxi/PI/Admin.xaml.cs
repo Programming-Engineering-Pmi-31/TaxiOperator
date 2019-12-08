@@ -3,9 +3,6 @@ using System.Windows.Input;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для Admin.xaml
-    /// </summary>
     public partial class Admin : Window
     {
         public Admin()

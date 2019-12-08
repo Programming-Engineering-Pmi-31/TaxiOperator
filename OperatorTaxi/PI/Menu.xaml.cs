@@ -3,9 +3,6 @@ using System.Windows.Input;
 
 namespace PI
 {
-    /// <summary>
-    /// Логика взаимодействия для Menu.xaml
-    /// </summary>
     public partial class Menu : Window
     {
         public Menu()
