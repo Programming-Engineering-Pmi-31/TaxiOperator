@@ -34,7 +34,7 @@
     <Grid Name="FindPanel" HorizontalAlignment="Left" Margin="-5,-5,0,0" Width="705" >
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#D2691E"/>
+                <GradientStop Color="Orange"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid>
