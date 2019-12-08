@@ -10,7 +10,7 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="#D2691E"/>
+                <GradientStop Color="Orange"/>
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel>
