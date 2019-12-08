@@ -1,2 +1,2 @@
-# MyAirports2.0
-Flight reservation application
+# Taxi Operator
+desktop application about Taxi reservation

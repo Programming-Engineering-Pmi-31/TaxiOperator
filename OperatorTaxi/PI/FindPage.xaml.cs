@@ -29,7 +29,7 @@ namespace PI
             CountInfant.SelectedIndex = 0;
             DepartTaxi.Items.Clear();
             ArrivalTaxi.Items.Clear();
-            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LocalDataBase;Integrated Security=True";
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BDLAST;Integrated Security=True";
             try
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
@@ -85,23 +85,6 @@ namespace PI
             }
         }
 
-        private void ReserveTicket_Click(object sender, RoutedEventArgs e)
-        {
-            if (dataGrid.SelectedItem != null)
-            {
-                try
-                {
-                    DataRowView row = dataGrid.SelectedItem as DataRowView;
-                    Personal_Information personalInformationWindow = new Personal_Information(Login, Convert.ToInt32(row.Row.ItemArray[0].ToString()));
-                    Class1.Clear();
-                    personalInformationWindow.Show();
 
-                }
-                catch (Exception ee)
-                {
-                    MessageBox.Show(ee.Message);
-                }
-            }
-        }
     }
 }

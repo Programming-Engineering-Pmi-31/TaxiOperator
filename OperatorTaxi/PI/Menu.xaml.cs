@@ -36,15 +36,11 @@ namespace PI
             Main.Content = new Cabinet(Login);
         }
 
-       
+
 
         private void FindButton_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new FindPage(Login);
-        }
-        private void MyTicketsButton_Click(object sender, RoutedEventArgs e)
-        {
-            Main.Content = new MyTickets(Login);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
