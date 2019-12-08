@@ -63,7 +63,7 @@ namespace PI
                 {
                     string connectionString = ConfigurationManager.ConnectionStrings["MainConnection"].ConnectionString;
                     string query = $"SELECT Id,DepartCity,ArriveCity,convert(varchar(10),DepartDate,104) as 'DepartDate'," +
-                        $"convert(varchar(10),ArriveDate,104) as 'ArrivalDate',CAST(DepartTime AS CHAR(5)) as 'DepartTime',CAST(ArriveTime AS CHAR(5)) as 'ArriveTime',TAXIXID as 'TaxiID',DriverName as 'Driver Name' FROM InfoOrder " +
+                        $"convert(varchar(10),ArriveDate,104) as 'ArrivalDate',CAST(DepartTime AS CHAR(5)) as 'DepartTime',CAST(ArriveTime AS CHAR(5)) as 'ArriveTime',TAXIXID as 'TaxiID',DriverName as 'Driver Phone Number' FROM InfoOrder " +
                         $"where DepartCity = '{DepartTaxi.Text}' AND ArriveCity = '{ArrivalTaxi.Text}' and convert(varchar(10),DepartDate,104) = '{Convert.ToDateTime(DatePicker.Text).ToString("dd.MM.yyyy")}'";
                     using (SqlConnection connection = new SqlConnection(connectionString))
                     {
