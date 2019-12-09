@@ -4,9 +4,13 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Text.RegularExpressions;
 
 namespace PI
 {
+    /// <summary>
+    /// Логика взаимодействия для Registration.xaml
+    /// </summary>
     public partial class Registration : Window
     {
         public Registration()
@@ -31,8 +35,17 @@ namespace PI
         }
 
         private void RegistationButton_Click(object sender, RoutedEventArgs e)
+
         {
-            if (LoginBlock.Text != "" && EmailBlock.Text != "" && PasswordBox.Password != "")
+            string email = EmailBlock.Text;
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(email);
+
+            string password = PasswordBox.Password;
+            Regex regex2 = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$");
+            Match match2 = regex2.Match(password);
+
+            if (match2.Success && match.Success && LoginBlock.Text != "" && EmailBlock.Text != "" && PasswordBox.Password != "")
             {
                 try
                 {
@@ -58,8 +71,15 @@ namespace PI
             }
             else
             {
-                MessageBox.Show("Something wrong");
+                MessageBox.Show("not valid email or password (at least one number, one lowercase and one uppercase letter" +
+                    " at least six characters)");
+
             }
+
+
+
+
+
         }
     }
 }
