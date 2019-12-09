@@ -41,11 +41,16 @@ namespace PI
             Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
             Match match = regex.Match(email);
 
+
             string password = PasswordBox.Password;
             Regex regex2 = new Regex(@"^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}$");
             Match match2 = regex2.Match(password);
 
-            if (match2.Success && match.Success && LoginBlock.Text != "" && EmailBlock.Text != "" && PasswordBox.Password != "")
+            string login = LoginBlock.Text;
+            Regex regex3 = new Regex(@"\w{4,}$");
+            Match match3 = regex3.Match(login);
+
+            if (match3.Success && match2.Success && match.Success && LoginBlock.Text != "" && EmailBlock.Text != "" && PasswordBox.Password != "")
             {
                 try
                 {
@@ -71,8 +76,8 @@ namespace PI
             }
             else
             {
-                MessageBox.Show("not valid email or password (at least one number, one lowercase and one uppercase letter" +
-                    " at least six characters)");
+                MessageBox.Show("not valid email, login(at least four symbols) or password(at least one number, one lowercase and one uppercase letter" +
+                    " at least six characters) ");
 
             }
 
