@@ -1,4 +1,4 @@
-﻿<Page x:Class="PI.FindPage"
+﻿<Page x:Class="PI.FindOrder"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -34,7 +34,7 @@
     <Grid Name="FindPanel" HorizontalAlignment="Left" Margin="-5,-5,0,0" Width="705" >
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="Orange"/>
+                <GradientStop Color="#D2691E"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Grid>

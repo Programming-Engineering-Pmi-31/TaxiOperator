@@ -42,7 +42,7 @@
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="0" Width="198" Grid.RowSpan="2">
             <DockPanel.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="Orange"/>
+                    <GradientStop Color="#B8860B"/>
                 </LinearGradientBrush>
             </DockPanel.Background>
             <Image Source="Photos/Taxiimage.png" Margin="0,52,0,356" Width="203" />
