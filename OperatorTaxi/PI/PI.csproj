@@ -104,15 +104,14 @@
     <Compile Include="Cabinet.xaml.cs">
       <DependentUpon>Cabinet.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ChangeTaxi.xaml.cs">
-      <DependentUpon>ChangeTaxi.xaml</DependentUpon>
+    <Compile Include="ChangeOrder.xaml.cs">
+      <DependentUpon>ChangeOrder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="DeleteTaxi.xaml.cs">
-      <DependentUpon>DeleteTaxi.xaml</DependentUpon>
+    <Compile Include="DeleteOrder.xaml.cs">
+      <DependentUpon>DeleteOrder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FindPage.xaml.cs">
-      <DependentUpon>FindPage.xaml</DependentUpon>
+    <Compile Include="FindOrder.xaml.cs">
+      <DependentUpon>FindOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
@@ -141,7 +140,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChangeTaxi.xaml">
+    <Page Include="ChangeOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,11 +152,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DeleteTaxi.xaml">
+    <Page Include="DeleteOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FindPage.xaml">
+    <Page Include="FindOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

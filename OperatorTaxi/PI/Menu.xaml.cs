@@ -3,6 +3,9 @@ using System.Windows.Input;
 
 namespace PI
 {
+    /// <summary>
+    /// Клас Menu це навігація сторінки користувача.
+    /// </summary>
     public partial class Menu : Window
     {
         public Menu()
@@ -37,12 +40,12 @@ namespace PI
 
         private void FindButton_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new FindPage(Login);
+            Main.Content = new FindOrder(Login);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Main.Content = new FindPage(Login);
+            Main.Content = new FindOrder(Login);
         }
     }
 }

@@ -6,15 +6,23 @@ using System.Configuration;
 
 namespace PI
 {
-    
-    public partial class AddTaxiUser : Page
+    /// <summary>
+    /// Клас AddTaxi, створений для взаємодії з AddTaxi.xaml
+    /// </summary>
+    public partial class AddTaxi : Page
     {
-        public AddTaxiUser()
+        public AddTaxi()
         {
             InitializeComponent();
         }
 
-        private void ConfimAddTaxiUser_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// ConfimAddTaxi_Click функція, що створює дані про новий автомобіль таксі,попередньо перевіряючи валідність заповлення полів.
+        /// </summary>
+        /// <param name="sender">Об'єкт.</param>
+        /// <param name="e">Маршрутизована подія</param>
+
+        private void ConfimAddTaxi_Click(object sender, RoutedEventArgs e)
         {
             if (AddTAXIXID.Text != "" && AddTaxiName.Text != "" && Passengers.Text != "" && BusinessClass.Text != "" && EconomClass.Text != "")
             {

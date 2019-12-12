@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 namespace PI
 {
     /// <summary>
-    /// Логика взаимодействия для Registration.xaml
+    /// Клас Registration, створений для взаємодії з Registration.xaml
     /// </summary>
     public partial class Registration : Window
     {
@@ -33,7 +33,11 @@ namespace PI
         {
             Application.Current.Shutdown();
         }
-
+        /// <summary>
+        /// RegistationButton_Clic функція,створення даних входу нового корисувача,попередньо валідуючи їх.
+        /// </summary>
+        /// <param name="sender">Об'єкт</param>
+        /// <param name="e">Маршрутизована подія</param>
         private void RegistationButton_Click(object sender, RoutedEventArgs e)
 
         {
@@ -80,10 +84,6 @@ namespace PI
                     " at least six characters) ");
 
             }
-
-
-
-
 
         }
     }

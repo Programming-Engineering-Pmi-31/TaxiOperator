@@ -5,6 +5,9 @@ using System.Data.SqlClient;
 using System.Configuration;
 namespace PI
 {
+    /// <summary>
+    /// Клас Cabinet, створений для взаємодії з Cabinet.xaml
+    /// </summary>
     public partial class Cabinet : Page
     {
         public Cabinet()
@@ -17,6 +20,15 @@ namespace PI
             Login = login;
         }
         public string Login { get; set; }
+
+        /// <summary>
+        /// Password_Button_Click функція, що дає змогу змінити пароль користувача.
+        /// </summary>
+        /// <remarks>
+        /// Сворює дані про новий пароль,попередньо перевіряючи валідність заповлення полів.
+        /// </remarks>
+        /// <param name="sender">Об'єкт.</param>
+        /// <param name="e">Маршрутизована подія</param>
         private void Password_Button_Click(object sender, RoutedEventArgs e)
         {
             if (Old_Password.Text != "" && Password.Text != "" && Password_check.Text != "")
@@ -54,7 +66,14 @@ namespace PI
                 MessageBox.Show("Заповніть всі поля");
             }
         }
-
+        /// <summary>
+        /// Email_Button_Click функція, що дає змогу змінити електронну пошту користувача.
+        /// </summary>
+        /// <remarks>
+        /// Сворює дані про нову електронну поштуq,попередньо перевіряючи валідність заповлення полів.
+        /// </remarks>
+        /// <param name="sender">Об'єкт.</param>
+        /// <param name="e">Маршрутизована подія</param>
         private void Email_Button_Click(object sender, RoutedEventArgs e)
         {
             if (Old_Email.Text != "" && Email.Text != "" && Email_check.Text != "")

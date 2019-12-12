@@ -7,14 +7,21 @@ using System.Data;
 
 namespace PI
 {
-    public partial class ChangeTaxi : Page
+    /// <summary>
+    /// Клас ChangeOrder, створений для взаємодії з ChangeOrder.xaml
+    /// </summary>
+    public partial class ChangeOrder : Page
     {
-        public ChangeTaxi()
+        public ChangeOrder()
         {
             InitializeComponent();
         }
-
-        private void ChangeTaxiButton_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// ChangeOrderButton_Click функція, що дає змогу змінити дані поїздки.
+        /// </summary>
+        /// <param name="sender">Об'єкт.</param>
+        /// <param name="e">Маршрутизована подія</param>
+        private void ChangeOrderButton_Click(object sender, RoutedEventArgs e)
         {
             if (DeleteDateGrid.SelectedItem != null)
             {
@@ -43,7 +50,11 @@ namespace PI
                 }
             }
         }
-
+        /// <summary>
+        /// Витягує дані з БД , про інформацію поїздки.
+        /// </summary>
+        /// <param name="sender">Об'єкт</param>
+        /// <param name="e">Маршрутизована подія</param>
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
             try
