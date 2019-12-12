@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PI</name>
+    </assembly>
+    <members>
+        <member name="T:PI.AddTaxi">
+            <summary>
+            Клас AddTaxi, створений для взаємодії з AddTaxi.xaml
+            </summary>
+            <summary>
+            AddTaxi
+            </summary>
+        </member>
+        <member name="M:PI.AddTaxi.ConfimAddTaxi_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            ConfimAddTaxi_Click функція, що створює дані про новий автомобіль таксі,попередньо перевіряючи валідність заповлення полів.
+            </summary>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.AddTaxi.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.AddOrder">
+            <summary>
+            Клас AddOrder, створений для взаємодії з AddOrder.xaml
+            </summary>
+            <summary>
+            AddOrder
+            </summary>
+        </member>
+        <member name="M:PI.AddOrder.ConfimAddTaxi_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            ConfimAddTaxi_Click функція, що створює дані про кінцевий пункт поїздки.
+            </summary>
+            <remarks>
+            Сворює дані про кінцевий пункт в базі даних, попередньо перевіряючи валідність заповлення полів.
+            </remarks>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.AddOrder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.OrderInfo">
+            <summary>
+            OrderInfo
+            </summary>
+        </member>
+        <member name="M:PI.OrderInfo.UpdateItems">
+            <summary>
+            Фу-ція UpdateItems витягує дані з БД для створення поїздки.
+            </summary>
+        </member>
+        <member name="M:PI.OrderInfo.ConfimAddTaxiInf_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            ConfimAddTaxiInf_Click функція, що створює дані про нові поїздки.
+            </summary>
+            <remarks>
+            Сворює дані про нову поїздку в базі даних, попередньо перевіряючи валідність заповлення полів.
+            </remarks>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.OrderInfo.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.Admin">
+            <summary>
+            Клас Admin це навігація сторінки адміністратора.
+            </summary>
+            <summary>
+            Admin
+            </summary>
+        </member>
+        <member name="M:PI.Admin.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.Cabinet">
+            <summary>
+            Клас Cabinet, створений для взаємодії з Cabinet.xaml
+            </summary>
+            <summary>
+            Cabinet
+            </summary>
+        </member>
+        <member name="M:PI.Cabinet.Password_Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Password_Button_Click функція, що дає змогу змінити пароль користувача.
+            </summary>
+            <remarks>
+            Сворює дані про новий пароль,попередньо перевіряючи валідність заповлення полів.
+            </remarks>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.Cabinet.Email_Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Email_Button_Click функція, що дає змогу змінити електронну пошту користувача.
+            </summary>
+            <remarks>
+            Сворює дані про нову електронну поштуq,попередньо перевіряючи валідність заповлення полів.
+            </remarks>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.Cabinet.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.ChangeOrder">
+            <summary>
+            Клас ChangeOrder, створений для взаємодії з ChangeOrder.xaml
+            </summary>
+            <summary>
+            ChangeOrder
+            </summary>
+        </member>
+        <member name="M:PI.ChangeOrder.ChangeOrderButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            ChangeOrderButton_Click функція, що дає змогу змінити дані поїздки.
+            </summary>
+            <param name="sender">Об'єкт.</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.ChangeOrder.UpdateButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Витягує дані з БД , про інформацію поїздки.
+            </summary>
+            <param name="sender">Об'єкт</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.ChangeOrder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.DeleteOrder">
+             <summary>
+            Клас DeleteOrder, створений для взаємодії з DeleteOrder.xaml
+             </summary>
+            <summary>
+            DeleteOrder
+            </summary>
+        </member>
+        <member name="M:PI.DeleteOrder.UpdateButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            UpdateButton_Click функція витягує дані з БД, про всі наявні поїздки.
+            </summary>
+            <param name="sender">Об'єкт</param>
+            <param name="e">Маршштрутизована подія</param>
+        </member>
+        <member name="M:PI.DeleteOrder.ConfirmDeleteOrderButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            ConfirmDeleteOrderButton_Click функція, видаляє дані поїздки з БД.
+            </summary>
+            <param name="sender">об'єкт</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.DeleteOrder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.FindOrder">
+            <summary>
+            Клас FindOrder, створений для взаємодії з FindOrder.xaml
+            </summary>
+            <summary>
+            FindOrder
+            </summary>
+        </member>
+        <member name="M:PI.FindOrder.SearchTaxi_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            SearchTaxi_Click витягує шукані поїздки з БД.
+            </summary>
+            <param name="sender">Об'єкт</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.FindOrder.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.Registration">
+            <summary>
+            Клас Registration, створений для взаємодії з Registration.xaml
+            </summary>
+            <summary>
+            Registration
+            </summary>
+        </member>
+        <member name="M:PI.Registration.RegistationButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            RegistationButton_Clic функція,створення даних входу нового корисувача,попередньо валідуючи їх.
+            </summary>
+            <param name="sender">Об'єкт</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.Registration.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.App">
+            <summary>
+            Логика взаимодействия для App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:PI.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:PI.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:PI.MainWindow">
+            <summary>
+            Клас MainWindow, створений для взаємодії з MainWindow.xaml.
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:PI.MainWindow.Login_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Login_Click-функція,визначає параметри входу для простого користувача та адміністратора.
+            </summary>
+            <param name="sender">Об'єкти</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.MainWindow.Registation_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Registration-Click функція, яка викликає вікно реєстрації Registration.
+            </summary>
+            <param name="sender">Об'єкт</param>
+            <param name="e">Маршрутизована подія</param>
+        </member>
+        <member name="M:PI.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.Menu">
+            <summary>
+            Клас Menu це навігація сторінки користувача.
+            </summary>
+            <summary>
+            Menu
+            </summary>
+        </member>
+        <member name="M:PI.Menu.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:PI.Properties.Resources">
+            <summary>
+              Класс ресурсов со строгим типом для поиска локализованных строк и пр.
+            </summary>
+        </member>
+        <member name="P:PI.Properties.Resources.ResourceManager">
+            <summary>
+              Возврат кэшированного экземпляра ResourceManager, используемого этим классом.
+            </summary>
+        </member>
+        <member name="P:PI.Properties.Resources.Culture">
+            <summary>
+              Переопределяет свойство CurrentUICulture текущего потока для всех
+              подстановки ресурсов с помощью этого класса ресурсов со строгим типом.
+            </summary>
+        </member>
+    </members>
+</doc>
